@@ -69,8 +69,8 @@ module.exports = {
         IBMPlex: ["var(--font-ibm-plex)"],
       },
       backgroundImage: {
-        "purple-gradient": "url('/assets/images/gradient-bg.svg')",
-        banner: "url('/assets/images/banner-bg.png')",
+        "purple-gradient": "url('/assets/images/gradient-bg_1.png')",
+        banner: "url('/assets/images/banner-bg_1.png')",
       },
       borderRadius: {
         lg: "var(--radius)",

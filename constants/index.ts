@@ -30,92 +30,14 @@ export const navLinks = [
       icon: "/assets/icons/camera.svg",
     },
     {
+      label: "Object Replace",
+      route: "/transformations/add/replace",
+      icon: "/assets/icons/replace.svg"
+    },
+    {
       label: "Profile",
       route: "/profile",
       icon: "/assets/icons/profile.svg",
-    },
-    {
-      label: "Buy Credits",
-      route: "/credits",
-      icon: "/assets/icons/bag.svg",
-    },
-  ];
-  
-  export const plans = [
-    {
-      _id: 1,
-      name: "Free",
-      icon: "/assets/icons/free-plan.svg",
-      price: 0,
-      credits: 20,
-      inclusions: [
-        {
-          label: "20 Free Credits",
-          isIncluded: true,
-        },
-        {
-          label: "Basic Access to Services",
-          isIncluded: true,
-        },
-        {
-          label: "Priority Customer Support",
-          isIncluded: false,
-        },
-        {
-          label: "Priority Updates",
-          isIncluded: false,
-        },
-      ],
-    },
-    {
-      _id: 2,
-      name: "Pro Package",
-      icon: "/assets/icons/free-plan.svg",
-      price: 40,
-      credits: 120,
-      inclusions: [
-        {
-          label: "120 Credits",
-          isIncluded: true,
-        },
-        {
-          label: "Full Access to Services",
-          isIncluded: true,
-        },
-        {
-          label: "Priority Customer Support",
-          isIncluded: true,
-        },
-        {
-          label: "Priority Updates",
-          isIncluded: false,
-        },
-      ],
-    },
-    {
-      _id: 3,
-      name: "Premium Package",
-      icon: "/assets/icons/free-plan.svg",
-      price: 199,
-      credits: 2000,
-      inclusions: [
-        {
-          label: "2000 Credits",
-          isIncluded: true,
-        },
-        {
-          label: "Full Access to Services",
-          isIncluded: true,
-        },
-        {
-          label: "Priority Customer Support",
-          isIncluded: true,
-        },
-        {
-          label: "Priority Updates",
-          isIncluded: true,
-        },
-      ],
     },
   ];
   
@@ -159,6 +81,15 @@ export const navLinks = [
       },
       icon: "filter.svg",
     },
+    replace: {
+      type: "replace",
+      title: "Object Replace",
+      subTitle: "Detect and replace one object with another inside of an image",
+      config: {
+        replace: { from: "", to: "", preserveGeometry: true }
+      },
+      icon: "replace.svg"
+    }
   };
   
   export const aspectRatioOptions = {
@@ -189,5 +120,3 @@ export const navLinks = [
     prompt: "",
     publicId: "",
   };
-  
-  export const creditFee = -1;
